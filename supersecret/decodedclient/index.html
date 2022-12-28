@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang=en>
+    <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
+    <style>
+        body {
+            background-color: #3fba54
+        }
+    </style>
+    <title>mope4.io</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport>
+    <meta content="Survive and climb the food chain in mope2io, the hit browser game!" name=description>
+    <meta content="animals, world animals, io games, animal games, .io, spaceships, browser game, html game, html5 game, agario, diepio, flash game, space, multiplayer" name="keywords">
+    <meta content="http://mope.io/img/banner.jpg" property="og:image">
+    <meta content=image/jpg property=og:image:type>
+    <meta content=1263 property=og:image:width>
+    <meta content=707 property=og:image:height>
+    <meta content=yes name=apple-mobile-web-app-capable>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="index, follow" name=robots>
+    <meta content="3 days" name=revisit-after>
+    <meta content=all name=googlebot>
+    <meta content=summary_large_image name=twitter:card>
+    <link href=main.css rel=stylesheet>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!--<link href=http://pagead2.googlesyndication.com/pagead/js/r20190306/r20190131/show_ads_impl.js rel=preload as=script> -->
+    <audio id=spawn_cell src=audio/click.mp3></audio>
+    <script>
+        var script = document.createElement("script")
+          , tstamp = new Date;
+        script.id = "factorem",
+        script.src = "//cdm.cursecdn.com/js/mope/cdmfactorem_min.js?sec=home&misc=" + tstamp.getTime(),
+        script.async = !1,
+        script.type = "text/javascript",
+        document.head.appendChild(script)
+    </script>
+    <div id=gameAreaWrapper>
+        <input id=chatinput class=chat-input placeholder="Chat here..." maxlength=35 style=margin-top:380.5px>
+        <canvas height=1722 id=gCanvas style=width:1160px;height:861px tabindex=1 width=2320></canvas>
+    </div>
+<div id="connecting" style="display: block;">
+<div id="conimgContainer">
+<center><img class="conimg" src="skins/mouse.png" width="80px"></center>
+</div>
+<p>Connecting...</p>
+<p id="txtServer" style="font-size:14px;">
+</div>
+    <div id=preroll class=vidAd></div>
+    <div id=startMenuWrapper style=display:block>
+        <div id=startMenu style=visibility:visible>
+            <img id="logo" src="img/mopenewlogo.png" width="350px" height="99px" />
+            <button id="ffa_Mode">FFA</button>
+            <button id="sandbox_Mode">Sandbox</button>
+      <!-- <p id=subTitleText>Sandbox is Back!</p> -->
+            <div id=nickInputContainer style=display:block>
+                <input id=nickInput maxlength=15 placeholder="Your name" style=width:100%;height:40px;line-height:36px autofocus>
+            </div>
+			<button id="on_offAudio" style="background-color:transparent;border-color:transparent;" type="submit">
+				<img id="sound_img" src="img/sound_on.png" width="30px" height="30px" />
+			</button>
+            <button id="settingsButton" style="background-color:transparent;border-color:transparent" type="submit">
+                <img src="images/settings.png" width="30" height="30" />
+            </button>
+            <select id="serverSelect">
+                <option>Finding Server...</option>
+            </select>
+            <div id=optionsDiv style=margin-top:6px;font-size:12px;display:none;flex-wrap:wrap;justify-content:center>
+                <label>
+                    <input id=options_noImages type=checkbox>
+                    <span style=color:#000>No Animal images</span>
+                </label>
+                <label>
+                    <input id=options_noNames type=checkbox>
+                    <span style=color:#000>No Names &Chat</span>
+                </label>
+                <label>
+                    <input id=options_lowGraphics type=checkbox>
+                    <span style=color:#000>Use Low graphics</span>
+                </label>
+                <label>
+                    <input id=options_noJoystick type=checkbox>
+                    <span style=color:#194614>No Joystick (mobile)</span>
+                </label>
+                <label>
+                    <input id=options_leftHanded type=checkbox>
+                    <span style=color:#194614>LEFT-handed Joystick</span>
+                </label>
+            </div>
+            <a>
+                <button id=startButton style=visibility:visible>Play</button>
+            </a>
+      <p id=spawnXpLabel style=display:none>
+      <br>
+      <center><div id="moneyRectDiv">
+        <a id="moneyRectButton" href="" target="_blank"></a>
+                    <a id="moneyRectButton" href="https://shre.su/8OQU" target="_blank">
+                        <img height="180" src="images/banner.jpg" width="320" alt="">
+                    </a>
+            </div></center>
+        </div>
+<div id="rightShell">
+<p id="experimental_Mode" style="display:none;background-color:rgba(33, 145, 66, 0.66);color:white">EXPERIMENTAL Mode</p>
+<p id="ffa_ModeTxt" style="display:none;background-color:rgba(33, 145, 66, 0.66);color:white">FFA Mode</p>
+<div id="admin_icons">
+<h3 style="color:#006912">Join us!</h3>
+<a href="https://discord.com/invite/vA8SAEz" target="_blank"><button class="links_href" style="border-radius: 10px"><img src="images/discord-logo.png" width="40px" height="45px" alt=""></button></a>
+<a href="https://www.youtube.com/MaximMoPeR" target="_blank"><button class="links_href" style="border-radius: 10px"><img src="images/youtube_ico.png" width="40px" height="45px" alt=""></button></a>
+</div>
+</div>
+<div id="howToPlayPopup">
+<h2>HOW TO PLAY ? (SANDBOX)</h2>
+<ul>
+<!-- <li>Beware of predators as they might eat you! They are circled in red.</li>
+<li>Upgrade your animal, eat food that is marked in green color!</li> -->
+<li>To chat with other players, press Enter.</li>
+     <li>Click on the top arrow to raise your animal (these arrows are often used instead of wasd).</li>
+    <li>Click on the bottom arrow to lower your animal (these arrows are often used instead of wasd)</li>
+</ul>
+</div>
+<div id="updatesPopup">
+<div class="updatesTex">UPDATES</div>
+<h2>Jan 10: Fixed bugs</h2>
+<ul>
+<li>-Fix: bug of transparent game on mobile device.</li>
+<li>-Fix: Again, a new logo for the menu. Higher quality and richer!</li>
+<img src="img/mopenewlogo.png" width="175px" height="49.5px" />
+</ul>
+<h2>Jan 9: COLOSSAL UPDATE</h2>
+<ul>
+<li>New: added a new dirt biome. The speed in mud is reduced by 3 times. Some animals are free to walk in mud!</li>
+<img src="img/updates/mud.png" width="189px" height="106px"/>
+<li>New: Carrot. You can eat carrots from the rabbit level onwards. Gives a lot of XP.</li>
+<img src="img/carrot.png" width="50px" height="50px" />
+<img src="img/carrot_e.png" width="50px" height="50px" />
+<li>Balance: Map size increased by 2x.</li>
+<li>Map now displays ocean biome and volcano.</li>
+<img src="img/updates/map.png" width="55px" height="54px" />
+<li>New: mushroom design changed to mope.io mushroom design.</li>
+<img src="img/updates/mushroom.png" width="50px" height="50px" />
+<li>Buff: Berries give 1 to 4 xp random to any animal.</li>
+<h2>Top players are currently disabled! Reason: causes server lags.</h2>
+</ul>
+<!-- <h2>(October 25): Fruint trees</h2>
+<ul>
+<li>Added fruit trees and new food bananas and coconuts</li>
+</ul>
+<h2>(October 21): VOLCANO BIOME</h2>
+<ul>
+<li>New: Added a volcanic biome, it is not yet fully tuned.</li>
+<img src="img/updates/volcano.png" width="185" height="124" />
+</ul>
+<h2>(October 20):</h2>
+<ul>
+<li>Fixed: Now the player will not shake when he is standing or walking slowly.</li>
+</ul>
+<h2>(October 10): BIG UPDATE</h2>
+<ul>
+<li>New: Coral Bushes with Red Caviar! Caviar gives 1-3 experience, as well as berries.</li>
+<img src="img/updates/newcaviarbush.png" width="185" height="110" />
+<li>Bushes now look smooth. Also, objects are smoothed when they appear.</li>
+<img src="img/updates/newbush.png" />
+<li>Balance: Slightly reduced the size of the lake. Fixed a bug with food passing into the lake.</li>
+<li>Players can now dive in the lake and receive 2% water every second.</li>
+<li>Water and caviar are now highlighted in green.</li>
+<li>New: added whirlpools in oceans. You can hide in them just like in holes! Any animal can hide.</li>
+<img src="img/updates/whirlpool.png" alt="">
+<li>Now you can hide in small holes too!</li>
+<li>Lilypad can now respawn, but randomly throughout the map (WILL BE FIXED)!</li>
+<li>Added your initial ping over servers.</li>
+<img src="img/updates/ping.png" alt="ping image">
+<li>The number of bushes on the server has been increased so that players have somewhere to hide in ambush.</li>
+<li>More sea animals added! Puffer fish, dolphin, Dugong, Vysoko Lobby bottlenose, Killer whale, Giant squid (So far, without their game skins).</li>
+<li>Buff: Berries now give 1-3 xp randomly! Likewise, mushrooms and lilies on each chain give a balanced experience.</li>
+<li>Added more minks, now there are 3 large and 5 small minks on the server.</li>
+<li>Buff: sea animals can now also increase their size, with a large amount of xp.</li>
+<li>Buff: Shrimp and Trout can no longer eat mushrooms and lilies. Also, the Crab and Squidward cannot eat the lily.</li>
+<li>New logo for the menu!</li>
+<img src="images/logo.png" width="190" height="53" alt="">
+<li>New icon for the site!</li>
+<img src="favicon.ico" alt="">
+<li>Now if the water is less than 15% you will not be able to accelerate. Save water!</li>
+<li>Marine animals coming soon! They have reduced speed on land and fast waste of water on land</li>
+<li>Removed top players, as it causes huge lags on the server (may be back soon).</li>
+<li>New cool skins: MOUSE, RABBIT, PIG, FOX, DEER, LION, DRAGON</li>
+<img src="skins/mouse.png" width="40px" height="40px" alt="">
+<img src="skins/rabbit.png" width="40px" height="40px" alt="">
+<img src="skins/pig.png" width="40px" height="40px" alt="">
+<img src="skins/fox.png" width="40px" height="40px" alt="">
+<img src="skins/deer.png" width="40px" height="40px" alt="">
+<img src="skins/lion.png" width="40px" height="40px" alt="">
+<img src="skins/dragon.png" width="40px" height="40px" alt="">
+<li>Music now plays when spawning.</li>
+<li>Now the xp bar shows how much % of the mass to the next animal.</li>
+<li>Connecting block design improved.</li>
+</ul> -->
+<!-- <h2>October 28th 2019</h2>
+<ul>
+<li>Changed site interface.
+<li>-Sandbox commands added
+<li>-Enjoy trying out the experimental mope.io, we will see how popular this version is- If enough people play this, we will improve this version with updates.
+</ul> -->
+</div>
+<div id="feedBLink" style="font-size:20px">
+<p>Credits: abc64, Node13.</p>
+</div>
+    </div>
+    <script src="client.js"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [],
+        gtag("js", new Date),
+        gtag("config", "UA-36494583-13")
+    </script>
+</html>
